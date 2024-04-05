@@ -34,11 +34,11 @@ class UserController extends Controller
     public function store(UserAddRequest $request)
     {
         if ($request->role_id) {
-            return User::create($request->all());
+            $user = User::create($request->all());
         } else {
-            return User::create($request->all() + ['role_id' => 3]);
+            $user = User::create($request->all() + ['role_id' => 3]);
         }
-
+        return dataResponse($user, 201);
     }
 
     public function show(User $user)
@@ -81,6 +81,7 @@ class UserController extends Controller
 //        }
         return dataResponse([
             'token' => $user->generateToken(),
+            'name' => $user->first_name
         ]);
     }
 
@@ -88,12 +89,14 @@ class UserController extends Controller
     public function logout()
     {
         Auth::user()->logoutToken();
-        return [
-            'data' =>
-                [
-                    'message' => 'logout',
-                ]
-        ];
+        return dataResponse(message: 'Logout');
+//        return [
+//            'success' => true,
+//            'data' =>
+//                [
+//                    'message' => 'logout',
+//                ]
+//        ];
     }
 
 //    public function register()
