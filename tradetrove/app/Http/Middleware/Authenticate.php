@@ -13,6 +13,6 @@ class Authenticate extends Middleware
      */
     protected function unauthenticated($request, array $guards)
     {
-        throw new APIException(403, 'Login failed');
+        throw new APIException(401, 'Login failed');
     }
 }

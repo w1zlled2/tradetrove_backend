@@ -8,6 +8,12 @@
       <sourceFolder url="file://$MODULE_DIR$/stuff/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/stuff/tests/Feature" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/stuff/tests/Unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tradetrove/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/tradetrove/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/tradetrove/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/tradetrove/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/tradetrove/tests/Feature" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tradetrove/tests/Unit" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/stuff/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/stuff/vendor/carbonphp/carbon-doctrine-types" />
       <excludeFolder url="file://$MODULE_DIR$/stuff/vendor/composer" />
@@ -120,6 +126,118 @@
       <excludeFolder url="file://$MODULE_DIR$/stuff/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/stuff/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/stuff/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/brick/math" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/carbonphp/carbon-doctrine-types" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/dflydev/dot-access-data" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/dragonmantank/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/fakerphp/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/fruitcake/php-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/graham-campbell/result-type" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/guzzlehttp/uri-template" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/laravel/pint" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/laravel/prompts" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/laravel/sail" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/laravel/sanctum" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/laravel/serializable-closure" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/league/commonmark" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/league/config" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/league/flysystem-local" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/league/mime-type-detection" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/nette/schema" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/nette/utils" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/nunomaduro/collision" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/nunomaduro/termwind" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/phpoption/phpoption" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/phpunit/php-invoker" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/psr/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/ramsey/collection" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/sebastian/cli-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/sebastian/code-unit" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/sebastian/complexity" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/sebastian/lines-of-code" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/sebastian/type" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/spatie/backtrace" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/spatie/flare-client-php" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/spatie/ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/spatie/laravel-ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/mailer" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/polyfill-php83" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/polyfill-uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/uid" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/voku/portable-ascii" />
+      <excludeFolder url="file://$MODULE_DIR$/tradetrove/vendor/webmozart/assert" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

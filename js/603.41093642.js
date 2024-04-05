@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunktradetrove"]=self["webpackChunktradetrove"]||[]).push([[603],{603:function(t,e,n){n.r(e),n.d(e,{default:function(){return f}});var r=n(6768);const u={class:"about"},a=(0,r.Lk)("h1",null,"This is an about page",-1),s=[a];function c(t,e){return(0,r.uX)(),(0,r.CE)("div",u,s)}var o=n(1241);const i={},d=(0,o.A)(i,[["render",c]]);var f=d}}]);
+//# sourceMappingURL=603.41093642.js.map

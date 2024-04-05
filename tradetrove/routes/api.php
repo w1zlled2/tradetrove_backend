@@ -25,6 +25,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::get('/auth', [UserController::class, 'auth']);
 Route::apiResource("role", RoleController::class)
     ->middleware('role:admin');
 Route::apiResource("category", CategoryController::class)
@@ -65,3 +66,8 @@ Route::post("/login", [UserController::class, "login"])
 Route::get("/logout", [UserController::class, "logout"]);
 
 Route::apiResource('complaint', ComplaintController::class);
+
+
+//Route::get('test', function () {echo 'api test';})
+//->withoutMiddleware('auth:api');
+//

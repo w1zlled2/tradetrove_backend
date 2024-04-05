@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/stuff/tests/Unit" />
         <option value="$PROJECT_DIR$/stuff/tests/Feature" />
+        <option value="$PROJECT_DIR$/tradetrove/tests/Unit" />
+        <option value="$PROJECT_DIR$/tradetrove/tests/Feature" />
       </list>
     </option>
   </component>

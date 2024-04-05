@@ -16,6 +16,10 @@ class APIRequest extends FormRequest
 //    {
 //        return false;
 //    }
+protected function failedAuthorization()
+{
+    throw new APIException(403, 'Forbidden');
+}
 
     /**
      * Get the validation rules that apply to the request.

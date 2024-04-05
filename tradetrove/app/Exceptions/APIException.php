@@ -12,17 +12,13 @@ class APIException extends HttpResponseException
      * @param $message
      * @param $errors
      */
-    public function __construct($code=422, $message='Validation error', $errors=[])
+    public function __construct($code = 422, $message = 'Validation error', $errors = [], $needSuccess = true)
     {
-        $data=[
-            'error'=>[
-                'code'=>$code,
-                'message'=>$message,
-            ]
-        ];
-        if (count($errors)){
-            $data['error']['errors']=$errors;
-        }
+        $data = [];
+        if ($needSuccess) $data['success'] = false;
+        $data['message'] = $message;
+        if (count($errors)) $data['errors'] = $errors;
+
         $response = response()->json($data, $code);
         parent::__construct($response);
     }

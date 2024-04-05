@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+require_once __DIR__ . '../../../functions.php';
 use App\Exceptions\APIException;
 use App\Http\Requests\UserAddRequest;
+use App\Http\Requests\UserLoginRequest;
 use App\Http\Resources\UserCollection;
 use App\Http\Resources\UserResource;
 use App\Models\User;
@@ -14,9 +16,19 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+    public function auth()
+    {
+        $user = Auth::user();
+        if ($user) {
+            return dataResponse(message: 'Authenticated');
+        } else {
+            throw new APIException(401, 'Login failed');
+        }
+    }
     public function index()
     {
-        return new UserCollection(User::all());
+        return dataResponse(new UserCollection(User::all()));
+//        return new UserCollection(User::all());
     }
 
     public function store(UserAddRequest $request)
@@ -48,14 +60,17 @@ class UserController extends Controller
      * @param Request $request
      * @return JsonResponse
      */
-    public function login(Request $request)
+    public function login(UserLoginRequest $request)
     {
         $user = User::where([
             'email' => $request->email,
         ])->first();
-        if (!Hash::check($request->password, $user->password)) {
+        if (!$user || !Hash::check($request->password, $user->password)) {
             throw new APIException(401, 'Authentication failed');
+
         }
+//        if (!Hash::check($request->password, $user->password)) {
+//        }
 
 //        $user = User::where([
 //            'email' => $request->email,
@@ -64,13 +79,11 @@ class UserController extends Controller
 //        if (!$user) {
 //            throw new APIException(401, 'Authentication failed');
 //        }
-
-        return response()->json([
-            'data' => [
-                'user_token' => $user->generateToken(),
-            ]
+        return dataResponse([
+            'token' => $user->generateToken(),
         ]);
     }
+
 
     public function logout()
     {

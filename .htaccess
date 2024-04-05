@@ -1,2 +1,75 @@
+#RewriteEngine On
+#RewriteBase /
+#
+## Проверяем, что запрос начинается с /api/
+#RewriteCond %{REQUEST_URI} ^/api/ [NC]
+## Перенаправляем запрос на новый URL
+#RewriteRule ^api/(.*)$ /tradetrove/public/api/$1 [L,R=301]
+#
+## Перенаправляем запросы к index.html только если файл или директория не существует
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^index\.html$ - [L]
+#
+## Если файл или директория не существует, перенаправляем запрос на index.html
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /index.html [L]
+
+
+
+
+
+
+
+#RewriteEngine On
+#RewriteBase /
+#
+## Проверяем, что запрос начинается с /api/ и не является файлом или директорией
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^api/(.*)$ /tradetrove/public/api/$1 [L,R=301]
+#
+## Перенаправляем запросы к index.html только если файл или директория не существует
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^index\.html$ - [L]
+#
+## Если файл или директория не существует, перенаправляем запрос на index.html
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /index.html [L]
+
+
+
+
+
+
+
+
+
 RewriteEngine On
-RewriteRule ^(.*)$ tradetrove/public/$1
+#RewriteBase /
+
+# Проверяем, что запрос начинается с /api/ и не является файлом или директорией
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/(.*)$ /tradetrove/public/api/$1
+#RewriteRule !^api/(.*)$ /index.html
+# Проверяем, что запрос НЕ начинается с /api/
+RewriteCond %{REQUEST_URI} !^/api/ [NC]
+# Проверяем, что файл или директория не существует
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Перенаправляем запрос на index.html
+RewriteRule ^ index.html [L]
+
+## Перенаправляем запросы к index.html только если файл или директория не существует
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^index\.html$ - [L]
+#
+## Если файл или директория не существует, перенаправляем запрос на index.html
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /index.html [L]
