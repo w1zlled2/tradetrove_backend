@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^(.*)$ tradetrove/public/$1
