@@ -14,6 +14,12 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
+// ---------!!! ЗАМЕНИТЬ new PostCollection НА PostResource::collection (ДЛЯ ВСЕХ РЕСУРСОВ)  !!!---------
+// ---------!!! ЗАМЕНИТЬ new PostCollection НА PostResource::collection (ДЛЯ ВСЕХ РЕСУРСОВ)  !!!---------
+// ---------!!! ЗАМЕНИТЬ new PostCollection НА PostResource::collection (ДЛЯ ВСЕХ РЕСУРСОВ)  !!!---------
+// ---------!!! ЗАМЕНИТЬ new PostCollection НА PostResource::collection (ДЛЯ ВСЕХ РЕСУРСОВ)  !!!---------
+// ---------!!! ЗАМЕНИТЬ new PostCollection НА PostResource::collection (ДЛЯ ВСЕХ РЕСУРСОВ)  !!!---------
+
 class UserController extends Controller
 {
     public function auth()
