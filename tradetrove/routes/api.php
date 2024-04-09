@@ -26,6 +26,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/auth', [UserController::class, 'auth']);
+Route::post('/check-email', [UserController::class, 'checkEmailBusy'])
+    ->withoutMiddleware('auth:api');
 Route::apiResource("role", RoleController::class)
     ->middleware('role:admin');
 Route::apiResource("category", CategoryController::class)
@@ -42,7 +44,7 @@ Route::prefix("user")
     ->group(function () {
         Route::patch("/{user}/change-role", [UserController::class, "changeRole"])
             ->middleware('role:admin');
-        Route::group(['middleware' => 'role:moderator'], function() {
+        Route::group(['middleware' => 'role:moderator'], function () {
             Route::patch('/{user}/publishing-block', [UserController::class, 'publishingBlock']);
             Route::patch('/{user}/publishing-unlock', [UserController::class, 'publishingUnlock']);
         });

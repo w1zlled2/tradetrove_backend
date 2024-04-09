@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Апр 05 2024 г., 21:34
+-- Время создания: Апр 09 2024 г., 18:58
 -- Версия сервера: 10.4.32-MariaDB
 -- Версия PHP: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `trade_trove_bd`
+-- База данных: `trade_trove_db`
 --
 
 -- --------------------------------------------------------
@@ -176,8 +176,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `password`, `role_id`, `api_token`, `publishing_banned`, `created_at`, `updated_at`) VALUES
 (1, 'Игорь', 'Петров', 'moderator@gmail.com', '$2y$12$EwbxlnsXsZbxpsUqFjJO3uVUreqkHTUSFK1xFrnfA7i3BS0NJmLKO', 2, 'xt5gZdytLnPbCWqX521AXCvb6', 0, NULL, '2024-04-05 06:52:21'),
 (2, 'Виталий', 'Филин', 'admin@gmail.com', '$2y$12$iuTnfQi2ZJaB/PVIY8MbKeI7PqC4fqa/bKo0deyKuQtPk0NaNIRem', 1, 'JWI7quKfZEmATamH2bOlewOKE', 0, NULL, '2024-04-05 06:52:33'),
-(3, 'Иван', 'Малыхин', 'user@gmail.com', '$2y$12$dmllponK3QUuPQIlq409.eFPGuYdFhXj747ZgNOc6ukX443Rs06wO', 3, NULL, 0, NULL, '2024-04-05 18:48:21'),
-(27, 'user', 'user', 'user1@gmail.com', '$2y$12$dsHSrdo9W1mMo1.fIkA3t.TeJDeHJAw2.njWNupmq3einyna13t.m', 3, NULL, 0, '2024-04-05 19:22:21', '2024-04-05 19:34:04');
+(3, 'Иван', 'Малыхин', 'user@gmail.com', '$2y$12$dmllponK3QUuPQIlq409.eFPGuYdFhXj747ZgNOc6ukX443Rs06wO', 3, 'yW4X8EwGS6go58ezRl8qLLTdj', 0, NULL, '2024-04-09 15:29:03'),
+(27, 'user', 'user', 'user1@gmail.com', '$2y$12$dsHSrdo9W1mMo1.fIkA3t.TeJDeHJAw2.njWNupmq3einyna13t.m', 3, NULL, 0, '2024-04-05 19:22:21', '2024-04-05 20:12:56');
 
 --
 -- Индексы сохранённых таблиц

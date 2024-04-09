@@ -31,6 +31,13 @@ class UserController extends Controller
             throw new APIException(401, 'Login failed');
         }
     }
+
+    public function checkEmailBusy(Request $request)
+    {
+        $busy = User::where(['email' => $request->email])->first();
+//        dd($request->email);
+        return dataResponse(message: $busy ? 'Email is busy' : 'Email is free', success: !$busy);
+    }
     public function index()
     {
         return dataResponse(new UserCollection(User::all()));
