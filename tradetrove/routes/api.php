@@ -69,6 +69,8 @@ Route::get("/logout", [UserController::class, "logout"]);
 
 Route::apiResource('complaint', ComplaintController::class);
 
+Route::post('/dadata-validate', [PostController::class, 'dadataValidate'])
+    ->withoutMiddleware('auth:api');
 
 //Route::get('test', function () {echo 'api test';})
 //->withoutMiddleware('auth:api');

@@ -1,0 +1,6 @@
+{
+    "require": {
+        "movemoveapp/laravel-dadata": "^1.0",
+        "hflabs/dadata": "^22.3"
+    }
+}
