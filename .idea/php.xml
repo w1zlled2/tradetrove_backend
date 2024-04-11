@@ -129,6 +129,17 @@
       <path value="$PROJECT_DIR$/stuff/vendor/dragonmantank/cron-expression" />
       <path value="$PROJECT_DIR$/stuff/vendor/graham-campbell/result-type" />
       <path value="$PROJECT_DIR$/stuff/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/hflabs/dadata" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/movemoveapp/laravel-dadata" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/tradetrove/vendor/composer" />
       <path value="$PROJECT_DIR$/tradetrove/vendor/psr/clock" />
       <path value="$PROJECT_DIR$/tradetrove/vendor/psr/event-dispatcher" />
@@ -207,8 +218,8 @@
       <path value="$PROJECT_DIR$/tradetrove/vendor/symfony/translation-contracts" />
       <path value="$PROJECT_DIR$/tradetrove/vendor/symfony/yaml" />
       <path value="$PROJECT_DIR$/tradetrove/vendor/symfony/var-dumper" />
-      <path value="$PROJECT_DIR$/tradetrove/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/tradetrove/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/tradetrove/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/tradetrove/vendor/fakerphp/faker" />
       <path value="$PROJECT_DIR$/tradetrove/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/tradetrove/vendor/carbonphp/carbon-doctrine-types" />
@@ -250,6 +261,7 @@
   <component name="PhpUnit">
     <phpunit_settings>
       <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/stuff/phpunit.xml" custom_loader_path="$PROJECT_DIR$/stuff/vendor/autoload.php" use_configuration_file="true" />
+      <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/tradetrove/phpunit.xml" custom_loader_path="$PROJECT_DIR$/tradetrove/vendor/autoload.php" use_configuration_file="true" />
     </phpunit_settings>
   </component>
   <component name="PsalmOptionsConfiguration">
