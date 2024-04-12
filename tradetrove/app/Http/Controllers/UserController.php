@@ -34,7 +34,7 @@ class UserController extends Controller
 
     public function checkEmailBusy(Request $request)
     {
-        return $request->email;
+//        return $request->email;
         $busy = User::where(['email' => $request->email])->first();
 //        dd($request->email);
         return dataResponse(message: $busy ? 'Email is busy' : 'Email is free', success: !$busy);

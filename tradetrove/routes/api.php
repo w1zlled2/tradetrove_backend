@@ -30,7 +30,9 @@ Route::post('/check-email', [UserController::class, 'checkEmailBusy'])
     ->withoutMiddleware('auth:api');
 Route::apiResource("role", RoleController::class)
     ->middleware('role:admin');
-Route::apiResource("category", CategoryController::class)
+Route::get('/category', [CategoryController::class, 'index'])
+    ->withoutMiddleware('auth:api');
+Route::apiResource("category", CategoryController::class, ['except' => ['index']])
     ->middleware('role:admin');
 Route::apiResource("condition", ConditionController::class)
     ->middleware('role:admin');

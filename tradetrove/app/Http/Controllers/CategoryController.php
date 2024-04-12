@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+require_once __DIR__ . '../../../functions.php';
 use App\Http\Requests\CategoryAddRequest;
 use App\Models\Category;
 use Illuminate\Http\Request;
@@ -10,6 +10,7 @@ class CategoryController extends Controller
 {
     public function index()
     {
+        return dataResponse(Category::all());
         return [
             'data' => Category::all()
         ];

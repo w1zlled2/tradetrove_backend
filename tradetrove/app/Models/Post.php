@@ -18,6 +18,8 @@ class Post extends Model
         'price',
         'condition_id',
         'status_id',
+        'connect_type_id',
+        'phone'
     ];
 
     public function category()

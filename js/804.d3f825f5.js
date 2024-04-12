@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunktradetrove"]=self["webpackChunktradetrove"]||[]).push([[804],{1241:function(n,t){t.A=(n,t)=>{const r=n.__vccOpts||n;for(const[e,c]of t)r[e]=c;return r}},2804:function(n,t,r){r.r(t),r.d(t,{default:function(){return v}});var e=r(6768);const c={class:"container"},s=(0,e.Lk)("div",{class:"about"},[(0,e.Lk)("h1",null,"This is an about page")],-1),u=[s];function a(n,t){return(0,e.uX)(),(0,e.CE)("div",c,u)}var o=r(1241);const i={},f=(0,o.A)(i,[["render",a]]);var v=f}}]);
+//# sourceMappingURL=804.d3f825f5.js.map

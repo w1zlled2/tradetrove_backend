@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunktradetrove"]=self["webpackChunktradetrove"]||[]).push([[123],{1241:function(n,t){t.A=(n,t)=>{const r=n.__vccOpts||n;for(const[e,c]of t)r[e]=c;return r}},504:function(n,t,r){r.r(t),r.d(t,{default:function(){return f}});var e=r(6768);const c={class:"container"};function o(n,t){return(0,e.uX)(),(0,e.CE)("div",c," Личный кабинет ")}var u=r(1241);const s={},a=(0,u.A)(s,[["render",o]]);var f=a}}]);
+//# sourceMappingURL=123.d4dbcaf8.js.map

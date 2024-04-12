@@ -27,11 +27,15 @@ class PostAddRequest extends APIRequest
     {
         return [
             'title' => 'required|string|max:255',
-            'description' => 'string',
+            'description' => 'string|max:65535',
             'category_id' => 'required|integer|exists:categories,id',
             'address' => 'string|max:255',
-            'price' => 'integer',
-            'condition_id' => 'required|integer|exists:conditions,id',
+            'price' => 'integer|nullable',
+//            'condition_id' => 'required|integer|exists:conditions,id',
+            'condition' => 'required|string|max:255',
+            'files' => 'array',
+            'connect_type' => 'required|string|exists:connect_types,code',
+            'status_id' => 'integer|exists:statuses,id',
         ];
     }
 
